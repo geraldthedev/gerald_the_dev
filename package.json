@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
     "export": "next export"
   },
   "dependencies": {
     "autoprefixer": "^10.0.4",
+    "axios": "^0.21.1",
     "next": "10.0.3",
     "postcss": "^8.1.14",
     "react": "17.0.1",

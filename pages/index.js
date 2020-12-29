@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Nav from '../components/Nav'
 import Contact from '../components/Contact'
+import Projects from '../components/Projects'
 
 
 
@@ -12,7 +13,7 @@ export default function Home() {
         <title>Gerald the Dev</title>
         
       </Head>
-      <div className='container w-screen'>
+      <div className='container w-screen '>
         <section className='bg-white  rounded-b w-screen h-96'>
           <Nav />
           <div className='float-right bg-gray-700 rounded-l-md intro'>
@@ -23,8 +24,9 @@ export default function Home() {
           </div>
 
         </section>
-        <section className='w-screen h-96'>
+        <section className='w-screen h-96  flex items-center'>
         
+        <Projects />
 
         </section>
         <section className='w-screen h-96 bg-gray-800 '>
