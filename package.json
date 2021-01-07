@@ -11,8 +11,6 @@
   "dependencies": {
     "autoprefixer": "^10.2.0",
     "axios": "^0.21.1",
-    "dgram": "^1.0.1",
-    "dns": "^0.2.2",
     "dot-env": "0.0.1",
     "mongodb": "^3.6.3",
     "next": "10.0.3",
