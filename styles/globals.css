@@ -4,15 +4,16 @@
 
 
 @layer base{
-
   @font-face {
-    font-family: Heebo, san-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+    font-family: 'Heebo', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
   }
-  html,
+ 
+   html,
 body {
   padding: 0;
   margin: 0;
+  
   @apply bg-gray-900;
  
 }
@@ -28,6 +29,8 @@ a {
   
 }
 
+
+
 }
 
 .intro{
@@ -35,4 +38,10 @@ a {
   margin-top: 8em;
   height: 13em;
   width: auto;
+}
+
+.conform{
+  height: 18rem;
+  width: 40rem;
+
 }
