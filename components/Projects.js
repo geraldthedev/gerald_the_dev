@@ -34,7 +34,7 @@ export default class Projects extends React.Component {
         return(
             <div className="flex space-x-6 items-center justify-items-stretch">
                 {this.state.projects.map((repo, index)=>(
-                    <div key={index} className="rounded-md bg-white w-72 h-72 inline-block">
+                    <div key={index} className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
                         <div  className="h-16">
                         <p className="text-center">{repo.name}</p>
                         </div>

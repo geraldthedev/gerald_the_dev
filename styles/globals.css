@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 
 @layer base{
@@ -14,10 +15,8 @@ body {
   padding: 0;
   margin: 0;
   
-  @apply bg-gray-900;
  
 }
-
 
 a {
   
@@ -34,14 +33,19 @@ a {
 }
 
 .intro{
-  color: white;
-  margin-top: 8em;
-  height: 13em;
-  width: auto;
+ /*background: linear-gradient(328deg,  white, rgb(19, 136, 245),  rgb(0, 90, 255));*/
+ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+ font-family: 'Poppins', sans-serif;
 }
 
 .conform{
   height: 18rem;
   width: 40rem;
 
+}
+
+.menu{
+  color: white;
+  font-weight: 600;
+  font-size: medium;
 }

@@ -16,14 +16,15 @@ export default function Home() {
         
       </Head>
       <div className='container w-screen'>
-        <section className='bg-white  rounded-b w-screen h-96'>
+        <section className='bg-white rounded-b w-screen h-96 intro '>
+          <div className='container w-screen'>
           <Nav />
-          <div className='float-right bg-gray-700 rounded-l-md intro'>
-            <div className= 'justify-self-auto m-20 text-3xl name '>
-            <p className= ''>Gerald Bryant | Full Stack Developer</p>
-            </div>
-          
           </div>
+         <div className='box-content object-center ml-8'>
+         <p className='text-8xl'>Hi! I'm Gerald. A web developer.</p>
+         </div>
+          
+          
 
         </section>
         <section className='grid w-screen h-96 items-center justify-items-center overflow-x-hidden'>
