@@ -32,24 +32,53 @@ export default class Projects extends React.Component {
 
     render(){
         return(
-            <div className="flex space-x-6 items-center justify-items-stretch">
-                {this.state.projects.map((repo, index)=>(
-                    <div key={index} className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
+            <div className="flex space-x-10 items-center justify-items-stretch">
+                 <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
                         <div  className="h-16">
-                        <p className="text-center">{repo.name}</p>
+                        <p className="text-center"></p>
                         </div>
                         
                         <div>
-                        <p>{repo.description}</p>
+                        <p></p>
                         </div>
                         
                         <div>
-                        <p>{repo.language}</p>
+                        <p></p>
                         </div>
                 
 
                     </div>
-                ))}
+                    <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
+                        <div  className="h-16">
+                        <p className="text-center"></p>
+                        </div>
+                        
+                        <div>
+                        <p></p>
+                        </div>
+                        
+                        <div>
+                        <p></p>
+                        </div>
+                
+
+                    </div>
+                    <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
+                        <div  className="h-16">
+                        <p className="text-center"></p>
+                        </div>
+                        
+                        <div>
+                        <p></p>
+                        </div>
+                        
+                        <div>
+                        <p></p>
+                        </div>
+                
+
+                    </div>
+    
     
                 
             </div>

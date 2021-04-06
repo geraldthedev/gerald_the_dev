@@ -2,11 +2,37 @@ import Head from 'next/head'
 import Nav from '../components/Nav'
 import Contact from '../components/Contact'
 import Projects from '../components/Projects'
+import React from 'react'
+import Typed from 'typed.js'
 
 
 
+export default class Home extends React.Component {
+          constructor(props){
+              super(props);
+              this.state={
 
-export default function Home() {
+              }
+             
+              
+          
+          }
+          componentDidMount(){
+
+            const options ={
+              strings: ['^1000Hi!<br>^1000 I\'m Gerald.<br>^1000A web developer.'],
+              typespeed:0,
+              showCursor: false,
+            }
+        
+           this.typed = new Typed(this.el, options)
+
+           } 
+    
+ 
+
+ render(){
+
   return (
     <div className='container w-screen'>
       <Head>
@@ -17,13 +43,13 @@ export default function Home() {
       </Head>
       <div className='container w-screen'>
         <section className='bg-white rounded-b w-screen h-96 intro '>
-          <div className='container w-screen'>
+          <div>
           <Nav />
           </div>
-         <div className='box-content object-center ml-8'>
-         <p className='text-8xl'>Hi! I'm Gerald. A web developer.</p>
+         <div className='box-content object-center ml-8 meet'>
+          <span className='text-8xl  hello' ref={(el)=>{this.el = el}}>
+            </span>
          </div>
-          
           
 
         </section>
@@ -44,4 +70,9 @@ export default function Home() {
     
     </div>
   )
+
+
+ }
+  
 }
+
