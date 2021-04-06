@@ -7,6 +7,7 @@ import Typed from 'typed.js'
 
 
 
+
 export default class Home extends React.Component {
           constructor(props){
               super(props);
@@ -42,7 +43,7 @@ export default class Home extends React.Component {
         
       </Head>
       <div className='container w-screen'>
-        <section className='bg-white rounded-b w-screen h-96 intro '>
+        <div className='bg-white rounded-b w-screen h-96 intro '>
           <div>
           <Nav />
           </div>
@@ -52,19 +53,19 @@ export default class Home extends React.Component {
          </div>
           
 
-        </section>
-        <section className='grid w-screen h-96 items-center justify-items-center overflow-x-hidden'>
+        </div>
+        <div className='grid w-screen h-96 items-center justify-items-center overflow-x-hidden'>
         
         <Projects />
 
-        </section>
-        <section className='grid w-screen h-96 bg-gray-800 items-center '>
+        </div>
+        <div className='grid w-screen h-96 bg-gray-800 items-center '>
           <div className=' grid justify-items-stretch'>
           <Contact />
           </div>
         
 
-        </section>
+        </div>
         
       </div>
     

@@ -1,4 +1,5 @@
 import React from 'react'
+import { flipInX } from 'react-animations'
 
 const axios = require('axios').default;
 
@@ -10,22 +11,10 @@ export default class Projects extends React.Component {
         };
 
         this.componentDidMount=()=>{
-            axios.get('https://api.github.com/users/geraldthedev/repos')
-.then((res)=>{
-
-    var data = res.data
-    this.setState({
-        projects: data
-        
-    })
-    console.log(this.state.projects)
-    
-})
-.catch((err)=>{
-    console.log(err)
-})
+           
 
         }
+
 
     }
 
@@ -35,45 +24,57 @@ export default class Projects extends React.Component {
             <div className="flex space-x-10 items-center justify-items-stretch">
                  <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
                         <div  className="h-16">
-                        <p className="text-center"></p>
+                        <p className="text-center">Frontend</p>
+                        </div>
+                        <div>
+                        <p className="text-center">HTML</p>
+                        </div>
+                        <div>
+                        <p className="text-center">CSS</p>
+                        </div>
+                        <div>
+                        <p className="text-center">SASS</p>
+                        </div>
+                        <div>
+                        <p className="text-center">HTML</p>
                         </div>
                         
-                        <div>
-                        <p></p>
+                    </div>
+                    <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
+                        <div  className="h-16">
+                        <p className="text-center">Backend</p>
                         </div>
-                        
                         <div>
-                        <p></p>
+                        <p className="text-center">PHP</p>
+                        </div>
+                        <div>
+                        <p className="text-center">Nodejs</p>
+                        </div>
+                        <div>
+                        <p className="text-center">MongoDB</p>
+                        </div>
+                        <div>
+                        <p className="text-center">SQL</p>
                         </div>
                 
 
                     </div>
                     <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
                         <div  className="h-16">
+                        <p className="text-center">Tools</p>
+                        </div>
+                        
+                        <div>
+                        <p className="text-center">Git</p>
+                        </div>
+                        <div>
                         <p className="text-center"></p>
                         </div>
-                        
                         <div>
-                        <p></p>
+                        <p className="text-center">MongoDB</p>
                         </div>
-                        
                         <div>
-                        <p></p>
-                        </div>
-                
-
-                    </div>
-                    <div className="rounded-md bg-white w-72 h-72 inline-block shadow-xl">
-                        <div  className="h-16">
-                        <p className="text-center"></p>
-                        </div>
-                        
-                        <div>
-                        <p></p>
-                        </div>
-                        
-                        <div>
-                        <p></p>
+                        <p className="text-center">SQL</p>
                         </div>
                 
 
