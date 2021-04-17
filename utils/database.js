@@ -1,4 +1,5 @@
 import { MongoClient } from 'mongodb'
+import next from 'next'
 
 const { MONGODB_URI, MONGODB_DB } = process.env
 

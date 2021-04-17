@@ -2,9 +2,9 @@ import { Component } from "react";
 import React from 'react'
 
 
-export default class Contact extends React.Component{
-    render()
-    {
+const Contact=()=>{
+
+    
     return(
         <div className="grid justify-center">
             <div className="grid rounded-md bg-white conform  ">
@@ -46,4 +46,4 @@ export default class Contact extends React.Component{
         </div>
     )
 }
-}
+module.exports= Contact

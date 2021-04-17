@@ -21,7 +21,7 @@ export default class Home extends React.Component {
           componentDidMount(){
 
             const options ={
-              strings: ['^1000Hi!<br>^1000 I\'m Gerald.<br>^1000A web developer.'],
+              strings: ['^1000Hi!<br>^1000 I\'m Gerald.<br>^1000A Web Developer.'],
               typespeed:0,
               showCursor: false,
             }
@@ -48,7 +48,7 @@ export default class Home extends React.Component {
           <Nav />
           </div>
          <div className='box-content object-center ml-8 meet'>
-          <span className='text-8xl  hello' ref={(el)=>{this.el = el}}>
+          <span className='text-8xl hello' ref={(el)=>{this.el = el}}>
             </span>
          </div>
           
