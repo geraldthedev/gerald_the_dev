@@ -42,13 +42,13 @@ export default class Home extends React.Component {
         <title>Gerald the Dev</title>
         
       </Head>
-      <div className='container w-screen'>
+      <div className='container w-auto'>
         <div className='bg-white rounded-b w-screen h-96 intro '>
           <div>
           <Nav />
           </div>
          <div className='box-content object-center ml-8 meet'>
-          <span className='text-8xl hello' ref={(el)=>{this.el = el}}>
+          <span className='xl:text-8xl lg:text-8xl sm:text-8xl md:text-7xl hello' ref={(el)=>{this.el = el}}>
             </span>
          </div>
           

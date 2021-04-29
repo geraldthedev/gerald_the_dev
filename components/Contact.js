@@ -36,7 +36,7 @@ const Contact=()=>{
       </label><input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Website" type="url"></input></div>
                
                 <div className="grid">
-                    <button className=" bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow place-self-center">Contact</button>
+                    <button className=" bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow place-self-center ">Contact</button>
                     </div>
                 
                 
