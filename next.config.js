@@ -1,12 +1,10 @@
 const withFonts = require("next-fonts");
 
 
-module.exports = [withFonts]({
+module.exports = withFonts({
+    enableSvg: true,
     webpack(config, options) {
-        config.node = {
-           
-        };
-        
+       
         config.module.rules.push({
             test: /\.(png|woff|woff2|eot|ttf|svg)$/,
             use: [
