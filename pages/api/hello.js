@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { connectToDatabase } from  '../../utils/database'
 
-export default (req, res) => {
+export default async (req, res) => {
   const {db} = await connectToDatabase();
 
     db.user.insertOne({
