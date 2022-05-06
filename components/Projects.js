@@ -25,7 +25,7 @@ export default class Projects extends React.Component {
             <div className="flex space-x-10 items-center justify-items-stretch facts box-content">
                 
                 <div onLoad={()=> this.setState({ showing: !showing})} className="text-lg w-96 h-72">
-                    <p> I'm a Web Developer based out of Atlanta, Ga. who is passionionate about creating new experiences across the web. Let me help you bring your ideas to life. <br></br> 
+                    <p> I'm a Web Developer based out of Atlanta, Ga. who is passionate about creating new experiences across the web. Let me help you bring your ideas to life. <br></br> 
                     <br></br>
                     I'm open to projects that involve adding functionality and tools to webpages, creating web applications, and website optimization. Check out my GitHub to view more of my projects. Use the form below to contact me. 
                     </p>
