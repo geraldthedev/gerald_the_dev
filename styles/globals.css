@@ -33,15 +33,13 @@ a {
 .intro{
  /*background: linear-gradient(328deg,  white, rgb(19, 136, 245),  rgb(0, 90, 255));*/
  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
- font-family: 'Poppins', sans-serif;
-
-   
- 
- 
- 
  
 
- 
+}
+
+span#text{
+font-family: 'Poppins', sans-serif;
+
 }
 
 @media (prefers-reduced-motion: no-preference){
