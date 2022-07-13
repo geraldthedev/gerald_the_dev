@@ -41,7 +41,9 @@ const Contact=()=>{
                 
                 
                 </form>
-               
+               <!-- Start of z3ngbryant Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=1306b1ac-e38d-438a-b51d-392ff6eda9f0"> </script>
+            <!-- End of z3ngbryant Zendesk Widget script -->
             </div>
         </div>
     )
