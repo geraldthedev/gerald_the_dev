@@ -67,6 +67,8 @@ export default class Home extends React.Component {
         <div className='grid w-screen h-96 bg-gray-800 items-center '>
           <div className=' grid justify-items-stretch'>
           <Contact />
+                    <iframe width="250" height="50" style="border: 0" src="https://cdn.smooch.io/message-us/index.html?channel=messenger&color=blue&size=standard&radius=4px&label=Message us on Messenger&pageId=109386767590997"></iframe>
+
           </div>
         
          
