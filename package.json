@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "babel-jest": "^27.5.1",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "react-svg-loader": "^3.0.3"
   }
 }

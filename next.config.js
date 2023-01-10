@@ -2,7 +2,6 @@ const withFonts = require("next-fonts");
 
 
 module.exports = withFonts({
-    enableSvg: true,
     webpack(config, options) {
        
         config.module.rules.push({
@@ -15,6 +14,7 @@ module.exports = withFonts({
                 {
                     loader: "file-loader",
                 },
+                '@svgr/webpack'
             ],
         });
         return config;
