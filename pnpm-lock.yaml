@@ -16,7 +16,7 @@ specifiers:
   next-fonts: ^1.5.1
   next-session: ^3.4.0
   nvm: ^0.0.4
-  pnpm: ^7.29.1
+  pnpm: ^6.16
   postcss: ^8.2.2
   react: 17.0.1
   react-animations: ^1.0.0
@@ -41,7 +41,7 @@ dependencies:
   next-fonts: 1.5.1
   next-session: 3.4.3
   nvm: 0.0.4
-  pnpm: 7.29.1
+  pnpm: 6.35.1
   postcss: 8.4.21
   react: 17.0.1
   react-animations: 1.0.0
@@ -3732,9 +3732,9 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /pnpm/7.29.1:
-    resolution: {integrity: sha512-dn+65B2XpMIin7sQZvBIJ2Zyx8Z7LK95qyAvgEPE8qXkWYL/LuwpfMfK9Muc7+zNnpPwiQgtGEsxgOtuabFibQ==}
-    engines: {node: '>=14.6'}
+  /pnpm/6.35.1:
+    resolution: {integrity: sha512-Pt5JEjV2JSORAqw/XtjfF4k34PBQFpqV3kUMFYSlyrWJsio5Hr3lqy2oJkpprMrVbOyBJsxXfZDQOlvmytIrgA==}
+    engines: {node: '>=12.17'}
     hasBin: true
     dev: false
 

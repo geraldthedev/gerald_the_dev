@@ -23,7 +23,7 @@
     "next-fonts": "^1.5.1",
     "next-session": "^3.4.0",
     "nvm": "^0.0.4",
-    "pnpm": "^7.29.1",
+    "pnpm": "^6.16",
     "postcss": "^8.2.2",
     "react": "17.0.1",
     "react-animations": "^1.0.0",
