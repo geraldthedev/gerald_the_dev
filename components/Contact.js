@@ -1,10 +1,11 @@
 import { Component } from "react";
 import React from 'react'
+import jwt from 'jsonwebtoken'
+
 
 
 const Contact=()=>{
 
-    
     return(
         <div className="grid justify-center">
             <div className="grid rounded-md bg-white conform  ">
@@ -43,9 +44,22 @@ const Contact=()=>{
                 </form>
                
     <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=1306b1ac-e38d-438a-b51d-392ff6eda9f0"> </script>
+  
+    {
+      zE("messenger", "loginUser", (callback)=>{
+       try {
+        callback(process.env.auth_token)
+        console.log('user authenticated')
+       } catch (error) {
+        console.log(error)
+       }
+        
+      })
+    }
             
             </div>
         </div>
     )
+      
 }
 module.exports= Contact

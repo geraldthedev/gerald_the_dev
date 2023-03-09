@@ -19,4 +19,9 @@ module.exports = withFonts({
         });
         return config;
     },
+    env:{
+        kid: 'app_640103275400b0011ab26d96',
+        auth_token: '8cWdYo3QxtMNWfxtMvGSXJcLS7oFHN18oMIWNcgLlAoXoGJk0stHE-uw5RGkzqwn3DUuIR_KhKm3uJFzLPyrRQ'
+        
+    }
 });
