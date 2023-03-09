@@ -1,6 +1,8 @@
 import { Component } from "react";
 import React from 'react'
 import jwt from 'jsonwebtoken'
+import token from '../netlify/functions/auth'
+
 
 
 
@@ -48,7 +50,7 @@ const Contact=()=>{
     {
       zE("messenger", "loginUser", (callback)=>{
        try {
-        callback(process.env.auth_token)
+        callback(token)
         console.log('user authenticated')
        } catch (error) {
         console.log(error)
