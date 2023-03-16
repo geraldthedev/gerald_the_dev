@@ -1,4 +1,5 @@
 const withFonts = require("next-fonts");
+require("dotenv").config()
 
 
 
@@ -23,6 +24,7 @@ module.exports = withFonts({
     env:{
         kid: process.env.KID,
         auth_token: process.env.AUTH_TOKEN,
+        widget_key: process.env.WIDGET_KEY
         
     }
 });

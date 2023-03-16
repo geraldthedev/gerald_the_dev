@@ -4,6 +4,12 @@ import Contact from '../components/Contact'
 import Projects from '../components/Projects'
 import React from 'react'
 import Typed from 'typed.js'
+import {useEffect} from 'react'
+import Script from 'next/script'
+import dynamic from 'next/dynamic'
+import Auth from '../netlify/functions/auth'
+
+const Smooch = dynamic(import ('smooch'))
 
 
 
@@ -18,6 +24,8 @@ export default class Home extends React.Component {
               
           
           }
+
+          
           componentDidMount(){
 
             const options ={
@@ -32,12 +40,38 @@ export default class Home extends React.Component {
            analytics.load("rQ7N5mm8IGX0Ht3EwER9EDGwl2GAcDlA");
            analytics.page();
            }}()}
+           
+          
+           /*const container = document.getElementById("page")  
+           let script = document.createElement("script")
+            script.src ="https://static.zdassets.com/ekr/snippet.js?key=1306b1ac-e38d-438a-b51d-392ff6eda9f0"
+            script.async =true
+           container.appendChild(script)*/
 
-           } 
+         /* {
+            zE("messenger", "loginUser", (callback)=>{
+              try {
+               callback()
+               console.log('user authenticated')
+              } catch (error) {
+               console.log(error)
+              }
+               
+             })
+          }*/
+
+          
+          
+         
+           }
+          
+        
     
  
 
  render(){
+
+  let key = process.env.widget_key
 
   return (
     <div className='container w-screen'>
@@ -45,9 +79,26 @@ export default class Home extends React.Component {
 
         
         <title>Gerald the Dev</title>
+
+        
+
+        {/*<Script strategy="beforeInteractive">
+            {
+              Smooch.init({
+                integrationId: 'app_640103275400b0011ab26d96',
+                embedded: true
+              }).then(()=>{
+                let user = Smooch.getUser()
+              }).then(()=>{
+                Smooch.render(document.getElementById('widget'))
+              })
+    
+            
+            }
+          </Script>*/}
         
       </Head>
-      <div className='container w-auto'>
+      <div id='page' className='container w-auto'>
         <div className='bg-white rounded-b w-screen h-96 intro '>
           <div>
           <Nav />
@@ -57,17 +108,38 @@ export default class Home extends React.Component {
             </span>
          </div>
           
+          <>
+          <Script id='ze-snippet' src ={`https://static.zdassets.com/ekr/snippet.js?key=${key}`}
+          
+          onLoad={()=>{
+            console.log('Script has loaded')
 
+            zE("messenger", "loginUser", (callback)=>{
+              try {
+               callback(Auth)
+               console.log('user authenticated')
+              } catch (error) {
+               console.log(error)
+              }
+               
+             })
+
+            
+          }}/>
+          
+          
+        
+          </>
         </div>
         <div className='grid w-screen h-96 items-center justify-items-center overflow-x-hidden'>
         
         <Projects />
-
         </div>
         <div className='grid w-screen h-96 bg-gray-800 items-center '>
           <div className=' grid justify-items-stretch'>
           <Contact />
-                    
+
+          
           </div>
         
          

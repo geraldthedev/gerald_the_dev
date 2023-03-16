@@ -1,15 +1,18 @@
-import { Component } from "react";
-import React from 'react'
+import { Component, useState, useEffect } from "react";
+
 import jwt from 'jsonwebtoken'
-import token from '../netlify/functions/auth'
+import Auth from '../netlify/functions/auth'
+import Script from "next/script";
 
 
 
 
 const Contact=()=>{
 
+  
+
     return(
-        <div className="grid justify-center">
+        <div id="contact" className="grid justify-center">
             <div className="grid rounded-md bg-white conform  ">
                 
                 <form className="grid w-10/12 place-self-center" action='/hello' method='POST'>
@@ -42,22 +45,10 @@ const Contact=()=>{
                     <button className=" bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow place-self-center ">Contact</button>
                     </div>
                 
-                
+                   { /*<Script src="https://static.zdassets.com/ekr/snippet.js?key=1306b1ac-e38d-438a-b51d-392ff6eda9f0" strategy="lazyOnload" />*/}
+
+                    
                 </form>
-               
-    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=1306b1ac-e38d-438a-b51d-392ff6eda9f0"> </script>
-  
-    {
-      zE("messenger", "loginUser", (callback)=>{
-       try {
-        callback(token)
-        console.log('user authenticated')
-       } catch (error) {
-        console.log(error)
-       }
-        
-      })
-    }
             
             </div>
         </div>
