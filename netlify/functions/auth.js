@@ -4,18 +4,18 @@ import * as jwt from 'jsonwebtoken'
 
  const Auth = ()=>{
 
-    
-    const token = jwt.sign({ scope: 'user', external_id: '123456578'}, process.env.auth_token,{
-        header: {kid: process.env.kid}
-       });
-      
+     
     const payload ={
         name: '#{customerName}',
          email: '#{customerEmail}',
-         exp: '#{timestamp}',
+         exp: 100000,
          external_id: '#{customerIdentifier}'
       
        }
+
+       const token = jwt.sign(payload, process.env.auth_token,{
+        header: {kid: process.env.kid}
+       });
     return token
 }
 
