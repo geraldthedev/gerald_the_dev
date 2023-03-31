@@ -8,6 +8,10 @@ import {useEffect} from 'react'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
 import Auth from '../netlify/functions/auth'
+import Link from 'next/link'
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getPerformance } from "firebase/performance";
 
 
 
@@ -71,6 +75,20 @@ export default class Home extends React.Component {
  render(){
 
   let key = process.env.widget_key
+  const firebaseConfig = {
+    apiKey: process.env.fire_api_key,
+    authDomain: process.env.fire_auth_domain,
+    projectId: process.env.fire_project_id,
+    storageBucket: process.env.fire_storage_bucket,
+    messagingSenderId: process.env.messaging_sender_id,
+    appId: process.env.fire_app_id,
+    measurementId: process.env.fire_measurement_id
+  };
+
+ 
+  //const app =  initializeApp(firebaseConfig);
+  //const analytics =  getAnalytics(app);
+  //const perf = getPerformance(app);
 
   return (
     <div className='container w-screen'>
@@ -145,7 +163,6 @@ export default class Home extends React.Component {
         </div>
         
       </div>
-    
     </div>
   )
 

@@ -6,6 +6,11 @@ export default function Nav(){
         <div className="p-4 ">
                <ul className="space-x-4 menu">
                    <ul className="float-right space-x-3">
+
+                    <li className="inline-block">
+                        <Link href="login">Login</Link>
+
+                    </li>
                        <li className="inline-block">
                            <a href='https://github.com/geraldthedev'>
                            <FaGithub/>
