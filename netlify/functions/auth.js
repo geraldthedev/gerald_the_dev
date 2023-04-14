@@ -1,34 +1,27 @@
-import * as jwt from 'jsonwebtoken'
+import jwt from 'jsonwebtoken';
 
 
 
- export default (req, res)=>{
+ export default async function Auth(req, res){
 
- 
-    
-  return new Promise((resolve)=>{
-    const{ method } =req;
-    
 
-    try{
-      switch(method){
-        case 'POST':
-          const {name, email, password} =req.body;
-          const verify = fetch('z3ngbryant.zendesk.com/api/v2/users',{
+
+         // const {name, email, password} =req.body;
+         /* const verify = fetch('z3ngbryant.zendesk.com/api/v2/users',{
             method: "GET",
             credentials: "include",
             headers:{
-              "Authorization": `Basic ${process.env.email}/${process.env.apikey}`
+              "Authorization": `Basic ${process.env.email}/token:${process.env.apikey}`
             }
            }).then(res=>{
             console.log(res.json())
-            })
+            })*/
 
             const payload ={
-              external_id: '8768789',
-               email: req.body.email,
-               exp: "1639608035",
-               name: req.body.name,
+              external_id: '8987738',
+               email: "victortest@testmail.com",
+               exp: 9878987998,
+               name: "Victor Test",
                scope: "user"
             
              }
@@ -36,20 +29,9 @@ import * as jwt from 'jsonwebtoken'
              const token = jwt.sign(payload, process.env.auth_token,{
               header: {kid: process.env.kid}
              });
+            
+             return token
       }
-      return resolve()
-    }
-    
-
-     
-    
-       
-  } catch (error){
-    console.log(error)
-  })
       
-    
-}
-
 
 

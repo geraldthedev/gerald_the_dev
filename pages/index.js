@@ -126,20 +126,26 @@ export default class Home extends React.Component {
          </div>
           
           <>
-          <Script id='ze-snippet' src ={`https://static.zdassets.com/ekr/snippet.js?key=${key}`}
+          <Script async id='ze-snippet' src ={`https://static.zdassets.com/ekr/snippet.js?key=${key}`}
           
-          onLoad={()=>{
+         await onLoad={()=>{
             console.log('Script has loaded')
 
-            zE("messenger", "loginUser", (callback)=>{
-              try {
-               callback(Auth)
-               console.log('user authenticated')
-              } catch (error) {
-               console.log(error)
-              }
+                try { 
+                  zE('messenger', 'loginUser',(callback)=>{
+                    const jwt = Auth()
+                    callback(jwt)
+                    
+                    
+                  })
+                 
+                } catch (error) {
+                 console.log(error)
+                }
+            
+              
                
-             })
+             
 
             
           }}/>
