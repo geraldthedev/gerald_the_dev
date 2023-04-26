@@ -7,7 +7,7 @@ import jwt from 'jsonwebtoken';
 
 
          // const {name, email, password} =req.body;
-         /* const verify = fetch('z3ngbryant.zendesk.com/api/v2/users',{
+         const verify = fetch('z3ngbryant.zendesk.com/api/v2/users',{
             method: "GET",
             credentials: "include",
             headers:{
@@ -15,22 +15,29 @@ import jwt from 'jsonwebtoken';
             }
            }).then(res=>{
             console.log(res.json())
-            })*/
 
             const payload ={
               external_id: '8987738',
                email: "victortest@testmail.com",
-               exp: 9878987998,
+               exp: 1200,
                name: "Victor Test",
                scope: "user"
             
              }
       
-             const token = jwt.sign(payload, process.env.auth_token,{
-              header: {kid: process.env.kid}
-             });
+             
+            }).finally(y=>{
+
+              const token = jwt.sign(payload, process.env.auth_token,{
+                header: {kid: process.env.kid}
+               });
+
+               return token
+            })
+
+           
             
-             return token
+             
       }
       
 
