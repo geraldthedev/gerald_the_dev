@@ -134,6 +134,7 @@ export default class Home extends React.Component {
                 try { 
                   zE('messenger', 'loginUser',(callback)=>{
                     const jwt = Auth()
+                            console.log(jwt)
                     callback(jwt)
                     
                     
