@@ -20,7 +20,7 @@ import jwt from 'jsonwebtoken';
             const payload ={
               external_id: '8987738',
                email: "victortest@testmail.com",
-               iat: new Date(),
+               iat: new Date().getTime(),
                name: "Victor Test",
                scope: "user"
             
