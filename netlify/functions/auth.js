@@ -16,11 +16,11 @@ import jwt from 'jsonwebtoken';
            }).then(res=>{
             console.log(res.json())
             })*/
-
+            const issuedAt = Date.now()
             const payload ={
               external_id: '8987738',
                email: "victortest@testmail.com",
-               iat: Date.now(),
+               iat: issuedAt,
                name: "Victor Test",
                scope: "user"
             
